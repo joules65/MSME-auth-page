@@ -43,7 +43,71 @@
             </div>
         </div>
 
-       
+        <!-- Sign Up Form -->
+        <div id="signupForm" class="auth-section hidden">
+            <div class="auth-header">
+                <h1>Create Account</h1>
+                <p>Join us today</p>
+            </div>
+            <div class="auth-form">
+                <div class="success-message" id="signupSuccess">
+                    Account created successfully! You can now sign in.
+                </div>
+                <form id="signupFormElement">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" name="name" required>
+                        <div class="error-message" id="signupNameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input type="email" id="signupEmail" name="email" required>
+                        <div class="error-message" id="signupEmailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" name="password" required>
+                        <div class="password-strength" id="passwordStrength"></div>
+                        <div class="error-message" id="signupPasswordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+                <div class="divider">
+                    Already have an account?
+                </div>
+                <div class="auth-links">
+                    <button type="button" class="link-btn" id="showLogin">Sign in here</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div id="forgotPasswordForm" class="auth-section hidden">
+            <div class="auth-header">
+                <h1>Reset Password</h1>
+                <p>Enter your email to receive reset instructions</p>
+            </div>
+            <div class="auth-form">
+                <div class="success-message" id="forgotPasswordSuccess">
+                    Password reset instructions have been sent to your email.
+                </div>
+                <form id="forgotPasswordFormElement">
+                    <div class="form-group">
+                        <label for="forgotEmail">Email Address</label>
+                        <input type="email" id="forgotEmail" name="email" required>
+                        <div class="error-message" id="forgotEmailError"></div>
+                    </div>
+                    <button type="submit" class="btn">Send Reset Instructions</button>
+                </form>
+                <button class="back-btn" id="backToLogin">Back to Sign In</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
